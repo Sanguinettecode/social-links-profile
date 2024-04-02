@@ -105,6 +105,13 @@ address p {
     margin-top: 0.938rem;
     border-radius: 0.5rem;
     text-align: center;
+    transition: background-color 0.75s, box-shadow 0.75s;
+}
+.menu__item:hover {
+    background-color: var(--green);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(166,166,166,1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(166,166,166,1);
+    box-shadow: 3px 3px 5px 0px rgba(166,166,166,1);
 }
 
 .menu__item a {
@@ -115,6 +122,8 @@ address p {
    font-size: 0.875rem;
    
 }
+
+
 
 .attribution {
     position: absolute;
