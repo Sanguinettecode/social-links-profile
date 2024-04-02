@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --font-family: 'Inter', sans-serif;
+
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --black: hsl(0, 0%, 8%);
+
+}
+
+p, h2, a {
+    font-family: var(--font-family);
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--black);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 23.438rem;
+    min-height: 37.5rem;
+    border-radius: 0.625rem;
+    
+    background-color: var(--dark-grey);
+}
+
+.card__profile {
+    padding-top: 2.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+picture {
+    width: 5.625rem;
+    height: 5.625rem;
+}
+
+picture img {
+    border-radius: 3.125rem;
+    width: 100%;
+}
+
+.name {
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 1.875rem;
+}
+
+address p {
+    margin-top: .75rem;
+    color: var(--green);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 1.875rem;
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.menu {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu__item {
+    display: block;
+    background-color: var(--grey);
+    width: 18.75rem;
+    margin-top: 0.938rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.menu__item a {
+   display: block;
+   padding: 0.938rem;
+   color: var(--white);
+   font-weight: 600;
+   font-size: 0.875rem;
+   
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: var(--white);
+}
